@@ -1,44 +1,34 @@
-import  { useState } from 'react';
-import './Login.css';
+import { Link } from 'react-router-dom';
 
-function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-    console.log('Login attempt with:', { email, password });
-  };
-
-  return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+const Login = () => {
+    return (
+        <div>
+        <div>
+            <h1>Login</h1>
+            <form action="">
+            <div>
+                <input type="email" placeholder="Email" />
+                <label htmlFor="email">Email</label>    
+            </div>
+            <div>
+                <input type="email" placeholder="Email" />
+                <label htmlFor="email">Email</label>    
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                <label htmlFor="checkbox">Remember me</label>
+                </div>
+                <span>Forgot Password?</span>
+            </div>
+            <button type="Submit">Login</button>
+            <div>
+                <span>Don&apos;t have an account? <Link to="/Register">Create an account</Link></span>
+            </div>
+            </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Log In</button>
-      </form>
-    </div>
-  );
-}
+      </div>  
+    );
+};
 
 export default Login;
