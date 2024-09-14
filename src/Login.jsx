@@ -11,8 +11,8 @@ const Login = () => {
                 <label htmlFor="email">Email</label>    
             </div>
             <div>
-                <input type="email" placeholder="Email" />
-                <label htmlFor="email">Email</label>    
+                <input type="password" placeholder="Password" />
+                <label htmlFor="password">Password</label>    
             </div>
             <div>
                 <div>
