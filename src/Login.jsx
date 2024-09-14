@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-
+import './Login.css';
+    
 const Login = () => {
     return (
         <div>
-        <div>
-            <h1>Login</h1>
-            <form action="">
+            <div>
+                <h1>Login</h1>
+                <form action="">
             <div>
                 <input type="email" placeholder="Email" />
                 <label htmlFor="email">Email</label>    
@@ -16,14 +17,14 @@ const Login = () => {
             </div>
             <div>
                 <div>
-                    <input type="checkbox" name="checkbox" id="checkbox" />
+                <input type="checkbox" name="checkbox" id="checkbox" />
                 <label htmlFor="checkbox">Remember me</label>
                 </div>
                 <span>Forgot Password?</span>
             </div>
             <button type="Submit">Login</button>
             <div>
-                <span>Don&apos;t have an account? <Link to="/Register">Create an account</Link></span>
+                <span>Don&apos;t have an account? <Link to='Register'>Create an account</Link></span>
             </div>
             </form>
         </div>
