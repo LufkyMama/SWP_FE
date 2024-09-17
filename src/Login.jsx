@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Login.css';
+<head>
+    <title>KFS Login</title>
+</head>
 
 function Login() {
     return (
