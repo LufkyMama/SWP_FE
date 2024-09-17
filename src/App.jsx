@@ -8,7 +8,6 @@ function App() {
   return (
    <div className="app-container">
     <Routes>
-
     <Route path='/Login' element={<Login/>}/>
     <Route path='/Register' element={<Register/>}/>
     </Routes>
